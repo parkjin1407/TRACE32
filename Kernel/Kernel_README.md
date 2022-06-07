@@ -1,3 +1,3 @@
 # Hancommds_Community
 
-Kernel 분석에 관한 script 입니다.
+Kerenl분석 시, 유용하게 사용할 수 있는 cmm_script입니다.
