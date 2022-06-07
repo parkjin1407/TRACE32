@@ -1,0 +1,45 @@
+// T32 Tue Feb 25 13:36:40 2020
+
+B::
+winclear
+sys.cpu.cortexm55
+sys.up
+//elf, binary load
+data.load.binary "C:\Users\JinSeok.Park\Desktop\secutrans (2)\ap_0x80000000--0xBFFFFFFF_Calliope_vts_sram_1.bin" 0x00000000
+data.load.elf "C:\Users\JinSeok.Park\Desktop\secutrans (2)\vts.elf" /noclear /nocode
+//register 설정
+register.set R0 x
+register.set R1 x
+register.set R2 x
+register.set R3 x
+register.set R4 x
+register.set R5 x
+register.set R6 x
+register.set R7 x
+register.set R8 x
+register.set R9 x
+register.set R10 x
+register.set R11 x
+register.set R12 x
+register.set R13 x
+register.set R14 xxxx
+register.set R15 xxxx
+register.set xpsr xxxxxxx
+//PowerView 화면 구성
+WinPOS 79.5 26.929 75. 4. 26. 1. W005
+WinTABS 13. 0. 0. 0. 0. 0. 0. 0. 0. 21.
+frame.view %SpotLight /locals /caller
+
+WinPOS 79.5 0.0 35. 13. 0. 0. W001
+Register.view /SpotLight /Stack
+
+WinPOS 0.0 0.0 75. 12. 16. 1. W000
+WinTABS 10. 10. 25. 
+List.auto
+
+WinPOS 0.0 17.5 75. 13. 0. 1. W003
+WinTABS 26. 26.
+sYmbol.Browse
+
+
+ENDDO
